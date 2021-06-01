@@ -21,7 +21,7 @@ class MainFragmentViewModel @Inject constructor(
 ) : ViewModel() {
     // TODO: 6/1/21 create base view model
 
-    private val mMoviesCategoriesLiveData = MutableLiveData<List<Category<Movie>>>()
+    private val mMoviesCategoriesLiveData = MutableLiveData<List<Category<Movie>>>(ArrayList())
 
     init {
         viewModelScope.launch(Dispatchers.IO) {
