@@ -11,11 +11,7 @@ class TMDBRetrofit(private val gson: Gson) {
 
     private lateinit var retrofit: Retrofit
 
-    init {
-    }
-
     fun <T> create(service: Class<T>): T {
-
         retrofit = Retrofit.Builder()
             .baseUrl(getBaseUrl())
             .addConverterFactory(GsonConverterFactory.create(gson))

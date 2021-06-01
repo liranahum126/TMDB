@@ -8,7 +8,6 @@ import retrofit2.http.Query
 interface TmdbService {
 
     @GET("/3/discover/movie")
-//    @Headers("Content-Type:application/x-www-form-urlencoded")
     suspend fun discover(
         @Query("api_key") apiKey: String,
         @Query("language") language: String = "en-US",
@@ -17,5 +16,7 @@ interface TmdbService {
         @Query("primary_release_year") primary_release_year: Int? = null,
         @Query("primary_release_date.gte") primaryReleaseDateGTE: String? = null,
         @Query("primary_release_date.lte") primaryReleaseDateLTE: String? = null,
+        @Query("certification_country") certificationCountry: String? = null, // "US"
+        @Query("certification") certification: String? = null, // "R"
     ): Response<MovieDiscoverResponse>
 }
