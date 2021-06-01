@@ -52,20 +52,20 @@ data class MovieDiscoverResponse(
     override fun toResult(): List<Movie> {
         return results?.map {
             Movie(
-                adult = it.adult,
-                backdropPath = it.backdropPath,
-                genreIds = it.genreIds,
-                id = it.id,
-                originalLanguage = it.originalLanguage,
-                originalTitle = it.originalTitle,
-                overview = it.overview,
-                popularity = it.popularity,
-                posterPath = it.posterPath,
-                releaseDate = it.releaseDate,
-                title = it.title,
-                video = it.video,
-                voteAverage = it.voteAverage,
-                voteCount = it.voteCount
+                mAdult = it.adult,
+                mBackdropPath = it.backdropPath,
+                mGenreIds = it.genreIds,
+                mId = it.id,
+                mOriginalLanguage = it.originalLanguage,
+                mOriginalTitle = it.originalTitle,
+                mOverview = it.overview,
+                mPopularity = it.popularity,
+                mPosterPath = it.posterPath,
+                mReleaseDate = it.releaseDate,
+                mTitle = it.title,
+                mVideo = it.video,
+                mVoteAverage = it.voteAverage,
+                mVoteCount = it.voteCount
             )
         } ?: ArrayList()
     }
