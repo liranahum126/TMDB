@@ -44,7 +44,7 @@ data class MovieDiscoverResponse(
         @SerializedName("video")
         val video: Boolean?,
         @SerializedName("vote_average")
-        val voteAverage: Int?,
+        val voteAverage: Float?,
         @SerializedName("vote_count")
         val voteCount: Int?
     ) : Parcelable
