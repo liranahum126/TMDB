@@ -12,6 +12,7 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainFragment : Fragment() {
+    // TODO: 6/1/21 create base fragment
 
     val viewModel: MainFragmentViewModel by viewModels()
 

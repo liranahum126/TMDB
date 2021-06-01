@@ -1,6 +1,5 @@
 package com.example.tmdb.data
 
-import android.util.Log
 import retrofit2.Response
 
 abstract class BaseDataSource {
@@ -19,8 +18,6 @@ abstract class BaseDataSource {
     }
 
     private fun <T> error(message: String): Resource<T> {
-        Log.e("BaseDataSource", message)
         return Resource.error("Network call has failed for a following reason: $message")
     }
-
 }

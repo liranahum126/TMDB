@@ -1,6 +1,6 @@
 package com.example.tmdb.data.local
 
-import com.example.tmdb.data.discover.entities.enums.MoviesCategory
+import com.example.tmdb.data.discover.enums.MoviesCategory
 import javax.inject.Inject
 
 class MoviesCategoriesProvider @Inject constructor() {

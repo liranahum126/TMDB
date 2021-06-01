@@ -16,6 +16,7 @@ class DiscoverInteractor @Inject constructor(
     suspend fun getMainScreenData(coroutineScope: CoroutineScope, dataList: Array<MoviesCategory>) =
         flow {
 
+            // TODO: 6/1/21 download all categories async and emit every response that was received without waiting for all
             val dataListDeferred = dataList.map { movieCategory ->
                 when (movieCategory) {
                     MoviesCategory.Upcoming -> {
