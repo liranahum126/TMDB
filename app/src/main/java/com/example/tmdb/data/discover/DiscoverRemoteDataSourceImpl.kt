@@ -1,8 +1,8 @@
 package com.example.tmdb.data.discover
 
-import com.example.tmdb.ApiKey
-import com.example.tmdb.data.BaseDataSource
-import com.example.tmdb.data.Resource
+import com.example.tmdb.data.local.TMDBApiKeyProvider
+import com.example.tmdb.data.base_objects.BaseDataSource
+import com.example.tmdb.data.base_objects.Resource
 import com.example.tmdb.data.discover.entities.responses.MovieDiscoverResponse
 import com.example.tmdb.data.discover.enums.CertificationCountry
 import com.example.tmdb.data.discover.enums.CertificationType
@@ -27,7 +27,7 @@ class DiscoverRemoteDataSourceImpl @Inject constructor(private val tmdbService: 
 
         return getResult {
             tmdbService.discover(
-                apiKey = ApiKey.API_KEY_STRING,
+                apiKey = TMDBApiKeyProvider.API_KEY_STRING,
                 sortBy = sortBy.typeString,
                 primary_release_year = primaryReleaseYear,
                 primaryReleaseDateGTE = primaryReleaseDateGTE?.toServerDateFormat(),

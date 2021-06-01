@@ -1,4 +1,4 @@
-package com.example.tmdb.ui.fragments.adapters
+package com.example.tmdb.ui.fragments.main.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

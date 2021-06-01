@@ -1,4 +1,4 @@
-package com.example.tmdb.data
+package com.example.tmdb.data.base_objects
 
 data class Resource<out T>(val status: Status, val data: T?, val message: String?) {
 

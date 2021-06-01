@@ -1,7 +1,7 @@
 package com.example.tmdb.data.discover.entities.responses
 
 import android.os.Parcelable
-import com.example.tmdb.data.Mappable
+import com.example.tmdb.data.interfaces.Mappable
 import com.example.tmdb.data.discover.entities.bo.Movie
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize

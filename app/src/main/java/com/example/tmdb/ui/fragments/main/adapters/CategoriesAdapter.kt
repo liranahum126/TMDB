@@ -1,4 +1,4 @@
-package com.example.tmdb.ui.fragments.adapters
+package com.example.tmdb.ui.fragments.main.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,7 +6,7 @@ import androidx.databinding.library.baseAdapters.BR
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tmdb.data.discover.entities.bo.Movie
 import com.example.tmdb.databinding.ItemCategoryBinding
-import com.example.tmdb.ui.fragments.Category
+import com.example.tmdb.data.discover.entities.bo.Category
 import com.example.tmdb.utils.BindAdapter
 
 // TODO: 6/1/21 generise this adapter

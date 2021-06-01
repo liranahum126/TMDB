@@ -1,4 +1,4 @@
-package com.example.tmdb.ui.fragments
+package com.example.tmdb.ui.fragments.main
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -7,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.tmdb.data.discover.DiscoverInteractor
 import com.example.tmdb.data.discover.entities.bo.Movie
 import com.example.tmdb.data.local.MoviesCategoriesProvider
+import com.example.tmdb.data.discover.entities.bo.Category
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect

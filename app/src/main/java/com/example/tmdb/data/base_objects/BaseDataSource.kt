@@ -1,4 +1,4 @@
-package com.example.tmdb.data
+package com.example.tmdb.data.base_objects
 
 import retrofit2.Response
 

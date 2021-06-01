@@ -1,4 +1,4 @@
-package com.example.tmdb.ui.fragments
+package com.example.tmdb.ui.fragments.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tmdb.databinding.FragmentMainBinding
-import com.example.tmdb.ui.fragments.adapters.CategoriesAdapter
+import com.example.tmdb.ui.fragments.main.adapters.CategoriesAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

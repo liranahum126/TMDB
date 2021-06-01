@@ -9,14 +9,14 @@
 
         <variable
             name="viewmodel"
-            type="com.example.tmdb.ui.fragments.MainFragmentViewModel" />
+            type="com.example.tmdb.ui.fragments.main.MainFragmentViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/grey_dark"
-        tools:context=".ui.fragments.MainFragment">
+        tools:context=".ui.fragments.main.MainFragment">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/categoriesRecyclerView"

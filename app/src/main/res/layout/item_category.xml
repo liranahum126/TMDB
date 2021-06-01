@@ -9,7 +9,7 @@
 
         <variable
             name="category"
-            type="com.example.tmdb.ui.fragments.Category" />
+            type="com.example.tmdb.data.discover.entities.bo.Category" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

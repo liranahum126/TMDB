@@ -1,13 +1,13 @@
 package com.example.tmdb.data.discover
 
-import com.example.tmdb.data.Resource
+import com.example.tmdb.data.base_objects.Resource
 import com.example.tmdb.data.discover.entities.bo.Movie
 import com.example.tmdb.data.discover.entities.responses.MovieDiscoverResponse
 import com.example.tmdb.data.discover.enums.CertificationCountry
 import com.example.tmdb.data.discover.enums.CertificationType
 import com.example.tmdb.data.discover.enums.MoviesCategory
 import com.example.tmdb.data.discover.enums.SortBy
-import com.example.tmdb.ui.fragments.Category
+import com.example.tmdb.data.discover.entities.bo.Category
 import com.example.tmdb.utils.StringProvider
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.awaitAll
