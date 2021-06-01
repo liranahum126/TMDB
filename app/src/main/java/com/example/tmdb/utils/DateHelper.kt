@@ -5,9 +5,7 @@ import java.util.*
 
 class DateHelper {
 
-
     companion object {
-
         private const val SERVER_DATE_FORMAT = "yyyy-MM-dd"
 
         fun toServerDateFormat(date: Date): String {
