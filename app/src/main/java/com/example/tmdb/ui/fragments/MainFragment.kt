@@ -6,27 +6,40 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.example.tmdb.R
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.tmdb.databinding.FragmentMainBinding
+import com.example.tmdb.ui.fragments.adapters.CategoriesAdapter
 import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainFragment : Fragment() {
     // TODO: 6/1/21 create base fragment
 
-    val viewModel: MainFragmentViewModel by viewModels()
+    private val mViewModel: MainFragmentViewModel by viewModels()
+    private lateinit var categoriesAdapter: CategoriesAdapter
+    lateinit var binding: FragmentMainBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main, container, false)
+    ): View {
+        binding = FragmentMainBinding.inflate(layoutInflater).also {
+            it.viewmodel = mViewModel
+            it.lifecycleOwner = viewLifecycleOwner
+        }
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel.wefwef()
+        initRecyclerView()
+    }
+
+    private fun initRecyclerView() {
+        categoriesAdapter = CategoriesAdapter()
+        binding.categoriesRecyclerView.adapter = categoriesAdapter
+        binding.categoriesRecyclerView.layoutManager =
+            LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
     }
 }
